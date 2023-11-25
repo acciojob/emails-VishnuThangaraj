@@ -55,6 +55,8 @@ public class Gmail extends Email {
     public Gmail(String emailId, int inboxCapacity) {
         super(emailId);
         this.inboxCapacity = inboxCapacity;
+        Inbox = new ArrayList<>();
+        Trash = new ArrayList<>();
     }
 
     public void receiveMail(Date date, String sender, String message){
