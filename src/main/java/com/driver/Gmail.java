@@ -67,7 +67,7 @@ public class Gmail extends Email {
 
         for(Mail receivedMails : Inbox){
             Date current = receivedMails.getDate();
-            if(current.after(start) &&  current.equals(start) && current.before(end) && current.equals(end)){
+            if(current.after(start)  && current.before(end) ){
                 count++;
             }
         }
@@ -100,18 +100,18 @@ public class Gmail extends Email {
     }
 
     public ArrayList<Mail> getInbox() {
-        return Inbox;
+        return this.Inbox;
     }
 
     public void setInbox(ArrayList<Mail> inbox) {
-        Inbox = inbox;
+        this.Inbox = inbox;
     }
 
     public ArrayList<Mail> getTrash() {
-        return Trash;
+        return this.Trash;
     }
 
     public void setTrash(ArrayList<Mail> trash) {
-        Trash = trash;
+        this.Trash = trash;
     }
 }
