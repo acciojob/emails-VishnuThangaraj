@@ -109,7 +109,7 @@ public class Gmail extends Email {
 
         for(Mail receivedMails : Inbox){
             Date current = receivedMails.getDate();
-            if(current.after(start)  && current.before(end) ){
+            if((current.after(start) || current.equals(start))  && (current.before(end) && current.equals(end)) ){
                 count++;
             }
         }
