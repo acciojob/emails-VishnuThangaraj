@@ -94,4 +94,24 @@ public class Gmail extends Email {
         // Return the maximum number of mails that can be stored in the inbox
         return this.inboxCapacity;
     }
+
+    public void setInboxCapacity(int inboxCapacity) {
+        this.inboxCapacity = inboxCapacity;
+    }
+
+    public ArrayList<Mail> getInbox() {
+        return Inbox;
+    }
+
+    public void setInbox(ArrayList<Mail> inbox) {
+        Inbox = inbox;
+    }
+
+    public ArrayList<Mail> getTrash() {
+        return Trash;
+    }
+
+    public void setTrash(ArrayList<Mail> trash) {
+        Trash = trash;
+    }
 }
